@@ -48,6 +48,45 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jribbble.js"></script>
     <script src="assets/js/site-ck.js"></script>
+	<div id="bookingjs">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.timekit.io/booking-js/v1/booking.min.js" defer></script>
+  <script type="text/javascript">
+    window.timekitBookingConfig = {
+      name: 'vinoth',
+      email: 'vinothtimes@gmail.com',
+      apiToken: 'XQ83aSX18NAOsWepRyg92oDLlILGAasi',
+      calendar: 'c5d7f58f-c0ca-4363-a73c-f97814302c92',
+      avatar: 'https://lh6.googleusercontent.com/-BsWvcaLLPFU/AAAAAAAAAAI/AAAAAAAAAAA/KD7SyljHItM/photo.jpg',
+      timekitFindTime: {
+        filters: {
+          and: [
+            {
+              business_hours: { }
+            },
+            {
+              exclude_weekend: { }
+            }
+          ],
+          or: [
+            {
+              specific_time: {
+                start: '00',
+                end: '12'
+              }
+            },
+            {
+              specific_time: {
+                start: '13',
+                end: '24'
+              }
+            }
+          ]
+        }
+      }
+    }
+  </script>
+</div>
 
   </body>
 </html>
